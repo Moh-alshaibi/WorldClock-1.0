@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+p#cTime {
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
