@@ -1,26 +1,55 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(to right, #333333 0%, white 25%, white 50%, white 75%, #333333 100%);
+    background-size: 200% auto;
+    animation: gradient 15s ease infinite;
 }
 
 h1 {
     text-align: center;
     color: black;
+    width: 100%;
+    font-size: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p#cTime {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: black;
+    width: 100%;
 }
 
 button {
     display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
-    background-color: grey;
+    margin: 20px;
+    margin-top: 100px;
+    padding: 30px 20px;
+    background-color: black;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+    flex-basis: calc(25% - 20px);
+}
+
+.country{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
